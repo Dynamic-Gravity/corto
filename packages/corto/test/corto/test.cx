@@ -1634,3 +1634,6 @@ test/Suite ValueExpr::
     void tc_exprMemPtrOut()
     void tc_exprMemMemberOut()
     void tc_exprMemMemberInOut()
+
+test/Suite File::
+    void tc_testNonExistingFile()
