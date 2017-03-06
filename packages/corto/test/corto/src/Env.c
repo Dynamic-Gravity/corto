@@ -72,6 +72,16 @@ corto_void _test_Env_tc_envparseVariableNotFound(
 /* $end */
 }
 
+corto_void _test_Env_tc_envparseVariablePercent(
+    test_Env this)
+{
+/* $begin(test/Env/tc_envparseVariablePercent) */
+    char* s = corto_envparse("this%%20has%%20percents");
+    test_assert(s != NULL);
+    test_assertstr(s, "this%%20has%%20percents");
+/* $end */
+}
+
 corto_void _test_Env_tc_setenvFormatAndReplace(
     test_Env this)
 {
